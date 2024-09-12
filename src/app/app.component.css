@@ -1,0 +1,80 @@
+.gridRow {
+  justify-content: center;
+  display: flex;
+}
+
+.gridColumn {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridColumn .top {
+  display: flex;
+  text-align: center;
+}
+.gridColumn .top .half {
+  flex: 1;
+  font-size: 10px;
+}
+
+.gridColumn .bottom {
+  font-size: 24px;
+  text-align: center;
+}
+
+.gridColumn {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.gridColumn.obstacle {
+  background-color: black;
+}
+
+.gridColumn.startNode,
+.gridColumn.endNode {
+  background-color: lightblue;
+}
+
+.gridColumn.scanned {
+  background-color: lightgreen;
+}
+
+.gridColumn.visited {
+  background-color: red;
+}
+
+.gridColumn.shortestPath {
+  background-color: lightblue !important;
+}
+
+.panel {
+  margin: auto;
+  margin-top: 2rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel h3 {
+  margin-bottom: 1rem;
+}
+
+.panel button {
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.panel button.selected {
+  background-color: rgb(170, 166, 166);
+}
+
+.panel button:hover {
+  cursor: pointer;
+  background-color: rgb(170, 166, 166);
+}
