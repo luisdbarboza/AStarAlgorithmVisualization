@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<p>
+<p class="presentation">
   The following visualization shows a grid of items that represent a graph in
   which the A* algorithm can be visualized
 </p>
@@ -48,19 +48,19 @@
 } }
 
 <div class="panel">
-  <h3>Selecciona que quieres hacer:</h3>
+  <h3>Choose what you want to do:</h3>
   <button
     [class]="{ selected: mode === 'adding-obstacles' }"
     (click)="handlePanelButtonClick('adding-obstacles')"
   >
-    Agregar/quitar obstaculos
+    Add/remove obstacles
   </button>
   <button
     [class]="{ selected: mode === 'adding-startEndNodes' }"
     (click)="handlePanelButtonClick('adding-startEndNodes')"
   >
-    Agregar nodo de inicio/final
+    Add starting/end node
   </button>
 
-  <button (click)="executeAStar()">Ejecutar A*</button>
+  <button (click)="executeAStar()">Execute A*</button>
 </div>
